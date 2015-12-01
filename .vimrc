@@ -20,3 +20,9 @@ filetype indent on
 
 "デリートキー"
 set backspace=start,eol,indent
+
+"rubyの設定"
+if expand("%:t") =~ ".*\.rb"
+  set tabstop=2
+  set shiftwidth=2
+endif
